@@ -7,7 +7,7 @@
  * Version: 1.0
  * Author: tu4mo
  * Author URI: tu4mo.com
- * License: MIT
+ * License: ISC
  */
 
 defined( 'ABSPATH' ) or die();
