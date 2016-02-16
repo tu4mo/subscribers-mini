@@ -108,7 +108,7 @@ function subsmin_export() {
 	$subscribers = get_posts(
 		array(
 			'posts_per_page' => -1,
-			'post_type' => 'subsmin_subscription'
+			'post_type'      => 'subsmin_subscription'
 		)
 	);
 
@@ -152,8 +152,8 @@ function subsmin_shortcode( $atts ) {
 
 	$a = shortcode_atts(
 		array(
-			'placeholder'  => 'Email address',
-			'button_label' => 'Subscribe',
+			'placeholder'        => 'Email address',
+			'button_label'       => 'Subscribe',
 			'completion_message' => 'Thank you for subscribing.'
 		),
 		$atts
