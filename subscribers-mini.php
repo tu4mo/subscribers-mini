@@ -105,7 +105,16 @@ function subsmin_export() {
 	header( 'Content-Disposition: attachment; filename=subscribers.csv' );
 	header( 'Pragma: no-cache' );
 
-	// TODO: output the CSV data
+	$subscribers = get_posts(
+		array(
+			'posts_per_page' => -1,
+			'post_type' => 'subsmin_subscription'
+		)
+	);
+
+	foreach ( $subscribers as $subscriber ) {
+		echo $subscriber->post_title . "\n";
+	}
 }
 
 /**
