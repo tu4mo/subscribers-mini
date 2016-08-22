@@ -1,6 +1,6 @@
 # Subscribers Mini
 
-A minimal e-mail subscribe form with CSV export for WordPress.
+A minimal e-mail subscribe form / posting list with CSV export for WordPress.
 
 ## Installation
 
